@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import Map from '../Map'
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.mainPageAlign}>
-        
+      <main className={styles.mapPageAlign}>
         <Image
           className={styles.bgWrap}
           alt="Starfield"
@@ -26,17 +26,11 @@ export default function Home() {
           }}
         />
 
-        <h1>Desmand King's Portfolio</h1>
+        <Map />
 
-        <div className={styles.mainButtonsCont}>
-          <Link href='/map'>
-            <button className={styles.buttonStyle}>Map</button>
-          </Link>
-
-          <Link href='/weather'>
-            <button className={styles.buttonStyle}>Weather</button>
-          </Link>
-        </div>
+        <Link href='/'>
+          <button className={styles.buttonStyle}>Back</button>
+        </Link>
 
       </main>
     </>
