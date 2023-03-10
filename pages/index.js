@@ -60,8 +60,8 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <h3>Creative Design</h3>
-                <p>Are you looking for an inclusive creative design 
-                  for your business? Implementing accessibility and 
+                <p>Are you looking for an inclusive creative design
+                  for your business? Implementing accessibility and
                   empowering users is my paramount motivation.</p>
               </div>
             </div>
@@ -74,8 +74,8 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <h3>Front-End Development</h3>
-                <p>Do you need help building  a responsive website? 
-                  Problem solving using HTML5, CSS3, and Javascript 
+                <p>Do you need help building  a responsive website?
+                  Problem solving using HTML5, CSS3, and Javascript
                   tools is what I provide. </p>
               </div>
             </div>
@@ -88,22 +88,37 @@ export default function Home() {
               </div>
               <div className={styles.flipCardBack}>
                 <h3>Project Mangement</h3>
-                <p>Is your project in need of enthusiastic leadership? 
-                  Agile team facilitation with cross functional teams 
+                <p>Is your project in need of enthusiastic leadership?
+                  Agile team facilitation with cross functional teams
                   is what really drives me.</p>
               </div>
             </div>
           </div>
         </div>
 
+        <h2>A selection of my front end apps</h2>
+
         <div className={styles.mainButtonsCont}>
+          <h3>Let's check the weather in your city!</h3>
+          <h3>Click the button below</h3>
+          <Link href='/weather'>
+            <button className={styles.buttonStyle}>Weather</button>
+          </Link>
+        </div>
+
+        <div className={styles.mainButtonsCont}>
+          <h3>Expo Line Map Demo</h3>
           <Link href='/map'>
             <button className={styles.buttonStyle}>Map</button>
           </Link>
+        </div>
 
-          <h3>Let's check the weather!</h3>
-          <Link href='/weather'>
-            <button className={styles.buttonStyle}>Weather</button>
+        <div className={styles.ctaContainer}>
+          <h2>Let's work together</h2>
+          <p>Are you looking for a creative technologist to help
+            you with your next project? I'd love to hear from you.</p>
+          <Link href='https://blackskydesignstudio.com/contact/'>
+            <button className={styles.buttonStyle}>Contact Me</button>
           </Link>
         </div>
 

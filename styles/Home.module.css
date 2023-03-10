@@ -1,4 +1,12 @@
 /* ------------------General Styling */
+.ctaContainer{
+  border: 1px solid white;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgb(255,255,255);
+  background: linear-gradient(347deg, rgba(255,255,255,1) 0%, rgba(166,46,28,1) 26%, rgba(0,0,0,1) 100%);
+}
 .bgWrap {
   position: fixed;
   height: 100vh;
@@ -75,9 +83,12 @@
 }
 .mainButtonsCont{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid white;
+  width: 40%;
+  margin: 1rem;
 }
 .mainContentAlign{
   display: flex;
